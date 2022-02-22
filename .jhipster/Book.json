@@ -1,0 +1,33 @@
+{
+  "changelogDate": "20220222184517",
+  "fields": [
+    {
+      "fieldName": "title",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "publicationDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "price",
+      "fieldType": "BigDecimal"
+    }
+  ],
+  "name": "Book",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "name",
+      "otherEntityName": "author",
+      "relationshipName": "authorRelationship",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}
